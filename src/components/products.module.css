@@ -1,0 +1,36 @@
+.page {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+.page article {
+  margin: 2rem;
+}
+
+.page span {
+  margin-left: 3rem;
+  color: gray;
+}
+
+.page div {
+  height: 15rem;
+  border-radius: 9px;
+  background: linear-gradient(145deg, #daddde, #ffffff);
+  box-shadow: 16px 16px 32px #dce0e1, -16px -16px 32px #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
